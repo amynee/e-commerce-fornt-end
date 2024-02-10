@@ -14,12 +14,22 @@ export class ProductService {
 
     constructor(private httpClient: HttpClient) { }
 
-    getProductsList(categoryId: number): Observable<Product[]> {
-        // need to build URL based on category id
-        const searchUrl = `${this.baseUrl}/search/findByCategoryId?id=${categoryId}`;
+    getProductsListPaginate(thePage: number, 
+                            thePageSize: number, 
+                            categoryId: number): Observable<GetResponseProducts> {
+        // need to build URL based on category id, page and size
+        const searchUrl = `${this.baseUrl}/search/findByCategoryId?id=${categoryId}`
+                        + `&page=${thePage}&size=${thePageSize}`;
         
-        return this.getProducts(searchUrl)
+        return this.httpClient.get<GetResponseProducts>(searchUrl);
     }
+
+    getProductsList(categoryId: number): Observable<Product[]> {
+      // need to build URL based on category id
+      const searchUrl = `${this.baseUrl}/search/findByCategoryId?id=${categoryId}`;
+      
+      return this.getProducts(searchUrl)
+  }
 
     private getProducts(searchUrl: string): Observable<Product[]> {
         return this.httpClient.get<GetResponseProducts>(searchUrl).pipe(
@@ -40,6 +50,16 @@ export class ProductService {
         return this.getProducts(searchUrl)
     }
 
+    searchProductsPaginate(thePage: number, 
+                           thePageSize: number, 
+                           theKeyword: string): Observable<GetResponseProducts> {
+          // need to build URL based on keyword, page and size
+        const searchUrl = `${this.baseUrl}/search/findByNameContaining?name=${theKeyword}`
+                        + `&page=${thePage}&size=${thePageSize}`;
+
+        return this.httpClient.get<GetResponseProducts>(searchUrl);
+    }
+
     getProduct(theProductId: number): Observable<Product> {
         // need tp build URL based on the product id
         const productUrl = `${this.baseUrl}/${theProductId}`;
@@ -51,6 +71,12 @@ export class ProductService {
 interface GetResponseProducts {
   _embedded: {
     products: Product[]
+  }, 
+  page: {
+    size: number,
+    totalElements: number,
+    totalPages: number,
+    number: number
   }
 }
 
