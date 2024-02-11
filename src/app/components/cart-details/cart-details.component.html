@@ -55,7 +55,10 @@
                         <td style="font-weight: bold">
                             <p class="mb-0">Total Quantity: {{totalQuantity}}</p>
                             <p class="mb-0">Shipping: FREE</p>
-                            <p>Total Price: {{totalPrice | currency: 'USD'}}</p>
+                            <p class="mb-0">Total Price: {{totalPrice | currency: 'USD'}}</p>
+                            <div>
+                                <a routerLink="/checkout" class="btn btn-primary">Checkout</a>
+                            </div>
                         </td>
                     </tr>
                 </table>
