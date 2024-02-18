@@ -1,0 +1,65 @@
+[33mcommit 37d3b29173d17e0fcf736a29f9266010e5817f79[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: amynee <tlijaniamine9@gmail.com>
+Date:   Sun Feb 18 11:38:43 2024 +0100
+
+    fix select for country and state
+
+[33mcommit af67c0a3ba57b9a714c82e797ab1d4243781d16e[m
+Author: amynee <tlijaniamine9@gmail.com>
+Date:   Sun Feb 11 02:25:22 2024 +0100
+
+    fix year and month for credit card form
+
+[33mcommit 8f68daf175ec85382e0e6fa8fef4d7dff99d9da6[m
+Author: amynee <tlijaniamine9@gmail.com>
+Date:   Sun Feb 11 01:21:05 2024 +0100
+
+    add checkout form
+
+[33mcommit 9d1d5ac3dae0cb7fffcf0e22ee9bc966d19ff618[m
+Author: amynee <tlijaniamine9@gmail.com>
+Date:   Sat Feb 10 21:53:56 2024 +0100
+
+    cart details
+
+[33mcommit 6704100b1e313676ff4785065e36f5963daabee3[m
+Author: amynee <tlijaniamine9@gmail.com>
+Date:   Sat Feb 10 19:38:42 2024 +0100
+
+    display cart status
+
+[33mcommit 83c40daf0eb28d6fdafc8e4c3a3f91d7bed95951[m
+Author: amynee <tlijaniamine9@gmail.com>
+Date:   Sat Feb 10 01:59:06 2024 +0100
+
+    add pagination
+
+[33mcommit 47d76da74ed6ef1e18daf971672c6e59e653e231[m
+Author: amynee <tlijaniamine9@gmail.com>
+Date:   Thu Feb 8 14:18:24 2024 +0100
+
+    product details
+
+[33mcommit 56e526a6bf54dd552ae663b522efef4d42369f09[m
+Author: amynee <tlijaniamine9@gmail.com>
+Date:   Wed Feb 7 22:02:34 2024 +0100
+
+    search products by name
+
+[33mcommit 7f0369703fff033d68356faa0b8003a1dbbb2442[m
+Author: amynee <tlijaniamine9@gmail.com>
+Date:   Wed Feb 7 00:16:41 2024 +0100
+
+    get products from backend app
+
+[33mcommit 64d3e6a08740c0c640f44c6f41325632f398c5e4[m
+Author: amynee <tlijaniamine9@gmail.com>
+Date:   Tue Feb 6 20:13:55 2024 +0100
+
+    products list
+
+[33mcommit 4619b94aa32bf14573c177097bd4450690a8447b[m
+Author: amynee <tlijaniamine9@gmail.com>
+Date:   Mon Feb 5 23:46:45 2024 +0100
+
+    initial commit
